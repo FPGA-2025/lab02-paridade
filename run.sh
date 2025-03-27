@@ -8,7 +8,8 @@ cp test/teste$1.txt teste.txt
 ./tb > saida.out
 cp saida.out test/saida$1.out
 cp saida.vcd test/saida$1.vcd
-rm saida.out rm saida.vcd
+rm saida.out
+rm saida.vcd
 
 if diff test/saida$1.out test/saida$1.ok >/dev/null; then
     echo "OK"
